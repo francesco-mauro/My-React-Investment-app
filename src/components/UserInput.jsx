@@ -38,21 +38,21 @@ export default function UserInput({ onChange, userInput }) {
                 </p>
             </div >
             <div className="input-group">
-            <p>
-                <label>Expected Return</label>
-                <input type="number"
-                    required
-                    value={userInput.expectedReturn}
-                    onChange={(event) => onChange('expectedReturn', event.target.value)} />
-            </p>
-            <p>
-                <label>Investment Duration</label>
-                <input type="number"
-                    required
-                    value={userInput.investmentDuration}
-                    onChange={(event) => onChange('investmentDuration', event.target.value)} />
-            </p>
-        </div >
+                <p>
+                    <label>Expected Return</label>
+                    <input type="number"
+                        required
+                        value={userInput.expectedReturn}
+                        onChange={(event) => onChange('expectedReturn', event.target.value)} />
+                </p>
+                <p>
+                    <label>Investment Duration</label>
+                    <input type="number"
+                        required
+                        value={userInput.duration}
+                        onChange={(event) => onChange('duration', event.target.value)} />
+                </p>
+            </div >
         </section >
     );
 }   
