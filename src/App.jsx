@@ -6,19 +6,27 @@ import Results from "./components/Results.jsx"
 
 
 function App() {
+  // const [userInput, setUserInput] = useState({
+  //   initialInvestment: 10000,
+  //   annualInvestment: 1200,
+  //   expectedReturn: 6,
+  //   investmentDuration: 10
+  // });
+    // ...existing code...
   const [userInput, setUserInput] = useState({
     initialInvestment: 10000,
     annualInvestment: 1200,
     expectedReturn: 6,
-    investmentDuration: 10
+    duration: 10
   });
+  // ...existing code...
 
 
   function handleChange(inputIdentifier, newValue) {
     setUserInput((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputIdentifier]: newValue
+        [inputIdentifier]: +newValue
       };
     });
   }
