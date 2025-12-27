@@ -27,6 +27,7 @@ export default function Results({ input }) {
             input.initialInvestment +
             yearData.annualInvestment * yearData.year;
           const totalInterest = yearData.valueEndOfYear - investedCapital;
+        const totalAmmountInvested = yearData.valueEndOfYear - totalInterest;
 
           return (
             <tr key={yearData.year}>
